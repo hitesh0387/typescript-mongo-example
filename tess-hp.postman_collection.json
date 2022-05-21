@@ -1,0 +1,104 @@
+{
+	"variables": [],
+	"info": {
+		"name": "tess-hp",
+		"_postman_id": "84104337-956e-1cdb-e621-d8acb2a8b69a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add parking slots",
+			"request": {
+				"url": "http://localhost:9090/slots",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"parkingLotNumber\": \"1\",\n\t\"isResereved\": true\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add users",
+			"request": {
+				"url": "http://localhost:9090/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\": 1,\n\t\"firstName\": \"Hitesh\",\n\t\"lastName\": \"Punjabi\",\n\t\"emailId\": \"hitesh.punjabi@test.com\",\n\t\"departmentName\": \"IT\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Allot parking slots",
+			"request": {
+				"url": "http://localhost:9090/registrations",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"assignedParkingLot\": {\n\t\t\"parkingLotNumber\": \"3\"\n\t},\n\t\"assignedUser\": {\n\t\t\"userId\": 3\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all available parking slots",
+			"request": {
+				"url": "http://localhost:9090/available-parking-slots",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all occupied parking slots",
+			"request": {
+				"url": "http://localhost:9090/occupied-parking-slots",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all resgistered users",
+			"request": {
+				"url": "http://localhost:9090/registered-users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

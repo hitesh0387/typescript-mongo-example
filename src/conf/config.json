@@ -1,0 +1,7 @@
+{
+    "local": {
+        "port": 9090,
+        "host": "0.0.0.0",
+        "mongoURL": "mongodb://localhost:27017/local"
+    }
+}

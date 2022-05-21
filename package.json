@@ -1,0 +1,21 @@
+{
+  "name": "tessaract-parklot-hitesh",
+  "version": "1.0.0",
+  "description": "APIs to manage the parking lot",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc"
+  },
+  "author": "Hitesh Punjabi",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.13",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.8"
+  }
+}
